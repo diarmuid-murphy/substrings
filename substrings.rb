@@ -1,5 +1,5 @@
 def substrings(words, dictionary)
-	words = words.downcase.gsub(/[^a-z0-9\s]/, '')
+	words = words.downcase.gsub(/[^a-z0-9\s]/, '') # removes all non alpha chars
 	result = Hash.new(0)
 	
 	dictionary.each do |word|
